@@ -59,7 +59,7 @@ export class Libro {
         return this.autores;
     }
 
-    getAutor(identificador: number): Autor | null {
+    getAutor(identificador: number | null): Autor | null {
         for (var i = 0; i < this.autores.length; i++) {
             if (this.autores[i].getIdentificador() === identificador) {
                 return this.autores[i];

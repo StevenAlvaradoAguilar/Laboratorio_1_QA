@@ -1,5 +1,5 @@
 export class Autor {
-    private identificador: number|null;
+    private identificador: number |null;
     private nombre: string;
     private apellidos: string;
     private fechaNacimiento: string;
