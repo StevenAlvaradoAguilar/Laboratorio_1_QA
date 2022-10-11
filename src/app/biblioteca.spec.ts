@@ -16,7 +16,7 @@ el objetivo de esta es verificar que los datos ingresados sean correctos para en
 los datos de prueba son la creación de un nuevo autor, libro y este libro se guarda en la clase biblioteca
 y el resultado esperado es que lo encuentre en la posición cero, ya que es el primer libro guardado.
 */
-describe('Método Biblioteca válido', function () {
+describe('Método Biblioteca Buscar posición de un Libro especifico válido', function () {
   let libroNuevo: any;
   let bibliotecaNueva: any;
   let autorNuevo: any;
@@ -57,7 +57,7 @@ el objetivo de esta es verificar que los datos ingresados sean incorrectos y que
 los datos de prueba son la creación de un nuevo autor, libro y este libro se guarda en la clase biblioteca
 y el resultado esperado es que lo encuentre en la posición cero, ya que es el primer libro guardado.
 */
-describe('Método Biblioteca inválido', function () {
+describe('Método Biblioteca Buscar posición de un Libro especifico inválido', function () {
   let libroNuevo: any;
   let bibliotecaNueva: any;
   let autorNuevo: any;
