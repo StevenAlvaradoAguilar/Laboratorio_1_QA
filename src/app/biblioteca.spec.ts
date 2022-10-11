@@ -4,19 +4,13 @@ import { Prestamo } from './prestamo';
 import { Autor } from './autor';
 import { DetallePrestamo } from './detalle-prestamo';
 
-describe('Biblioteca', () => {
-  it('should create an instance', () => {
-    expect(new Biblioteca()).toBeTruthy();
-  });
-});
-
 /*
 Caso válido del método de la clase biblioteca que busca la posición de un libro especifíco
 el objetivo de esta es verificar que los datos ingresados sean correctos para encontrar la posición del libro, 
 los datos de prueba son la creación de un nuevo autor, libro y este libro se guarda en la clase biblioteca
 y el resultado esperado es que lo encuentre en la posición cero, ya que es el primer libro guardado.
 */
-describe('Método Biblioteca Buscar posición de un Libro especifico válido', function () {
+describe('Método Biblioteca válido', function () {
   let libroNuevo: any;
   let bibliotecaNueva: any;
   let autorNuevo: any;
@@ -57,7 +51,7 @@ el objetivo de esta es verificar que los datos ingresados sean incorrectos y que
 los datos de prueba son la creación de un nuevo autor, libro y este libro se guarda en la clase biblioteca
 y el resultado esperado es que lo encuentre en la posición cero, ya que es el primer libro guardado.
 */
-describe('Método Biblioteca Buscar posición de un Libro especifico inválido', function () {
+describe('Método Biblioteca inválido', function () {
   let libroNuevo: any;
   let bibliotecaNueva: any;
   let autorNuevo: any;
@@ -98,7 +92,7 @@ el objetivo de esta es verificar que los datos ingresados sean correctos para bu
 los datos de prueba son la creación de un nuevo autor, libro, detalle del préstamo, un préstamo nuevo y este préstamo
 se guarda en la clase biblioteca y el resultado esperado es que el código sea encontrado y retorne el préstamo.
 */
-describe('Método Biblioteca Prestamo Por Codigo válido', function () {
+describe('Método Biblioteca válido', function () {
   let libroNuevo: any;
   let autorNuevo: any;
   let prestamoNuevo: any;
@@ -159,7 +153,7 @@ el objetivo de esta es verificar que los datos ingresados sean incorrectos para 
 los datos de prueba son la creación de un nuevo autor, libro, detalle del préstamo, un préstamo nuevo y este préstamo
 se guarda en la clase biblioteca y el resultado esperado es que el código no sea encontrado y que retorne null.
 */
-describe('Método Biblioteca Prestamo Por Codigo inválido', function () {
+describe('Método Biblioteca inválido', function () {
   let libroNuevo: any;
   let autorNuevo: any;
   let prestamoNuevo: any;
